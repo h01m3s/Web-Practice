@@ -1,0 +1,18 @@
+# Flexbox
+
+> div class under container class
+
+```css
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    background-color: springgreen;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+```
