@@ -44,3 +44,7 @@ body {
   border-radius: 5px;
   background: #1C7CCC;
 }
+
+.front-face {
+    transform: rotateY(180deg);
+  }
