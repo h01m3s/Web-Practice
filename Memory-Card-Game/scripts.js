@@ -29,6 +29,24 @@ function flipCard() {
   }
 }
 
+function flipCard() {
+  this.classList.add('flip');
+
+  if (!hasFlippedCard) {
+    // first click
+    hasFlippedCard = true;
+    firstCard = this;
+
+    return;
+  }
+
+  // second click
+  hasFlippedCard = false;
+  secondCard = this;
+
+  checkForMatch();
+}
+
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
