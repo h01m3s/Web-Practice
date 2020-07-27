@@ -1,6 +1,8 @@
 import { useReducer, useEffect } from 'react';
 import axios from 'axios';
 
+// Use local-cors-proxy
+// https://www.npmjs.com/package/local-cors-proxy
 const BASE_URL = 'http://localhost:8010/proxy/positions.json';
 
 const ACTIONS = {
